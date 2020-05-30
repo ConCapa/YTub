@@ -1,17 +1,75 @@
-<center><div id="meme" style="display : none;">
-<input type="text" class="Code" id="Codec"/>
-  </div></center>
+<html>
+<head>
+<div class="footer">
+  <img src="img/lols.jpg" class="imge"></img>
+</div>
+<style>
+.pro {
+color: #32a852;
+  text-shadow: #555 2px 2px 3px;
+}
+.imge {
+width: 1025px;
+height: 85px;
+color: green;
+}
+.footer {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0;
+  width: 100%; /* Full width */
+}
+</style>
+</head>
+<body>
+<center>
+<div>
+<br><br>
+<br><br>
+<input type="text" class="Code" id="Codec" placeholder="Pon tu codigo de tarjeta... "/><button class="chekit" onclick="chec();">Send</button>
+</div>
+</center>
+</body>
 <style>
 body {
   background-color: linen;
 }
+.chekit {
+  transition-duration: 0.1s;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 19px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+
+.chekit:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.chekit:hover {background-color: #3e8e41}
 
 .Code {
-  border: 2px solid red;
+  border: 2px solid #ccc;
   border-radius: 4px;
-  background-color: #3CBC8D;
   color: black;
+  background-color: #f8f8f8;
+  font-size: 30px;
+  resize: none;
+  padding: 12px 20px;
 }
 </style>
 <script>
+  var _0x47a2=['getElementById','Codigo\x20Incorrecto...','placeholder','Pon\x20tu\x20codigo\x20de\x20tarjeta...','Codec'];(function(_0x52a17e,_0x47a2cd){var _0x8e19ec=function(_0x29ad55){while(--_0x29ad55){_0x52a17e['push'](_0x52a17e['shift']());}};_0x8e19ec(++_0x47a2cd);}(_0x47a2,0x1bf));var _0x8e19=function(_0x52a17e,_0x47a2cd){_0x52a17e=_0x52a17e-0x0;var _0x8e19ec=_0x47a2[_0x52a17e];return _0x8e19ec;};function chec(){var _0x27cefc=document[_0x8e19('0x3')](_0x8e19('0x2'))['value'];if(_0x27cefc!==''){document['getElementById'](_0x8e19('0x2'))[_0x8e19('0x0')]=_0x8e19('0x4');setTimeout(()=>{document['getElementById']('Codec')[_0x8e19('0x0')]=_0x8e19('0x1');},0xfa0);}}
 </script>
+</html>
