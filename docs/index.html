@@ -70,22 +70,6 @@ body {
 }
 </style>
 <script>
-function chec(){
-var codigopuesto = document.getElementById("Codec").value
-var codigoplace = document.getElementById("Codec");
- if(codigopuesto !== "918274a8289JA82Uj0a82HA1ICOnC4P4Pr0"){
-    codigoplace.placeholder = "Codigo Incorrecto...";
- document.getElementById("Codec").value = "";
-   setTimeout(()=>{
- codigoplace.placeholder = "Pon tu codigo de tarjeta...";
-   }, 5000);
- } else {
- document.getElementById("DOOOU").style.display = "none";
- document.getElementById("DEEU").style.display = "block";
- document.getElementById("VideOsTiA").innerHTML = `
- 
- `;
- }
-}
+function chec(){var e=document.getElementById("Codec").value,t=document.getElementById("Codec");"918274a8289JA82Uj0a82HA1ICOnC4P4Pr0"!==e?(t.placeholder="Codigo Incorrecto...",document.getElementById("Codec").value="",setTimeout(()=>{t.placeholder="Pon tu codigo de tarjeta..."},5e3)):(document.getElementById("DOOOU").style.display="none",document.getElementById("DEEU").style.display="block",document.getElementById("VideOsTiA").innerHTML="\n \n ")}
 </script>
 </html>
