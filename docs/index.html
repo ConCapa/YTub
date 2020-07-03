@@ -1,320 +1,131 @@
-<HTML>
-<body style="background-color: #f5d4bc">
-
-<br><br>
-<center>
-<u>
-<p style="font-size: 20px;"id="ahrefttt">Deja en los comentarios que juego queres para la proxima actualizacion!</p></u
-
-> 
-
-</
-Center>
-
-<br><br>
-<p style="font-size: 15px;" id="ahreft">Mientras puedes jugar Cookie Clicker aqui abajo:</p>
-<button onclick="memeOWO()" id="ahreftt">Click aqui para jugar</button>
 <html>
 <head>
-<link rel="icon" href="img/parara.png">
-<script src="juego.js"></script>
-</head>
-<body class="dild">
-<center><h1 id="contador">0</h1>
-<img src="img/mlo.png" onclick="clic();" class="meme"/>
-<br><br>
-<br><br>
-<div id="okay">
+<div class="sideFooter">
+  <br><br><br><br>
+  <button class="buttonL" id="DivName">DCC</button>
+  <button class="buttonV" id="Videos">Videos</button>
+  <button class="buttonV" id="Imagenes">Sangre</button>
+  <button class="buttonV" id="ImagenesX">(-18 xxx +18)</button>
+  <button class="buttonV" id="Code">Codigo</button>
+  <button class="buttonV" id="Yutu" onclick="window.open('https://www.youtube.com/channel/UC0QxrrpKIUaE0AY0AQN40sQ?sub_confirmation=1')">YouTube</button>
 </div>
-<div id="consoler" style="display: none;"><input type="text" id="cmder" value="Console"/></center></div>
-<p>V 0.1 By Iñaki 2020</p>
-</center>
-<div class="upper" id="uppert2" style="display : none">
-<p class="pro">TIENDA 2</p>
-<center>
-<img src="img/Shop.jpg" class="btn" onclick="comprar(7);" alt="SuperMercado De Galletas!" title="Te da 80 galletitas por segundo! $25.000"></button>
-<img src="img/Lab.png" class="btn" onclick="comprar(8);" alt="Laboratorio De Galletas!" title="Te da 105 galletitas por segundo! $100.000"></button>
-<br><br>
-<img src="img/FlechaI.png" title="Volver a la tienda 1" alt="Tienda1" id="TT" class="ButtonShop" style="left: 0px;" onclick="ShopTH()" /><img src="img/BlueTicket.jpg" alt="BlueShop" title="Tienda Azul" id="TF" class="ButtonShopBlue" style="right: 0px;" onclick="ShopF()"></button>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-</center>
-</div>
-<div class="upper" id="uppert3" style="display : none">
-<p class="pro">Blue Shop</p>
-<center>
-<p>Comprar: 10.000 Galletas x $4 <button onclick="BuyIt()">Comprar!</p></button>
-<p>Comprar: 50.000 Galletas x $6 <button onclick="BuyIt2()">Comprar!</p></button>
-<p>Comprar: 80.000 Galletas x $8 <button onclick="BuyIt3()">Comprar!</p></button>
-<p>Comprar: 100.0k Galletas x $10 <button onclick="BuyIt4()">Comprar!</p></button>
-<br><br>
-<img src="img/FlechaI.png" title="Volver a la tienda 2" alt="Tienda2" id="TT" class="ButtonShop" style="left: 0px;" onclick="ShopTW()" />
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-</center>
+<div class="footer">
+  <img src="lols.jpg" class="imge"></img>
 </div>
 <style>
-.ButtonShop {
-height: 44px;
-width: 50px;
-border: 0.9px solid #020202;
-}
-.ButtonShopBlue {
-height: 44px;
-width: 100px;
-border: 0.9px solid #020202;
-}
-.ButtonShop2 {
-height: 40px;
-width: 90px;
-}
-</style>
-<div class="upper" id="uppert" style="display : block">
-<p class="pro">TIENDA</p>
-<center>
-<img src="img/cur.jpg" class="btn" onclick="comprar(0);" title="Te da 1 galletita por segundo! $100"></button>
-<img src="img/av.jpg" class="btn" onclick="comprar(1);" title="Te da 2 galletitas por segundo! $200"></button>
-<img src="img/furn.jpg" class="btn" onclick="comprar(2);" title="Te da 4 galletitas por segundo! $400"></button>
-<img src="img/rob.jpg" class="btn" onclick="comprar(3);" title="Te da 6 galletitas por segundo! $600"></button>
-<img src="img/fac.jpg" class="btn" onclick="comprarf(4);" title="Te da 20 galletitas por segundo y aumenta la velocidad! $2.000"></button>
-<img src="img/Trab.jpg" class="btn" onclick="comprar(5);" alt="Trabajadores" title="Trabajadores para tu Fabrica! $10.000(Te da 50 Galletas por segundo!)"></button>
-<img src="img/Maqu.jpg" class="btn" onclick="comprar(6);" alt="Maquinas" title="Te da 60 galletitas por segundo! $15.0000"></button>
-<br><br>
-<img src="img/Tienda2.jpg" alt="Tienda2" id="TD" title="Ir a la Tienda 2" class="ButtonShop2" onclick="ShopT()"></button>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-</center>
-</div>
-
-<div class="footer">
-<div id="inventario"></div>
-</div>
-</body>
-
-</html>
-</body>
-<script>
-function memeOWO(){
-document.getElementById("ahreft").remove();
-document.getElementById("ahreftt").remove();
-document.getElementById("ahrefttt").remove();
-}//the OWO is a real shit.
-setInterval(()=>{
-var cucument = document.getElementById("body")
-setTimeout(()=>{
-cucument.style.backgroundColor = "#000000";
-}, 500);
-}, 5400);
-</script>
-</HTML>
-<script>
-  var galletas = 0;
-//ok
-//end
-var inventario = [0,0,0,0,0,0,0,0,0];
-var galletasProduce = [1,2,4,6,20,50,60,80,100];
-var precioProducto = [100,200,400,600,2000,10000,15000,25000,100000];
-var aumentoPrecio = [20,40,60,80,200,1000,1500,2500];
-function clic(){
-galletas++;
-Cheatss = true;
-}
-function BuyIt(){
-
-}
-var Cheatss = false;
-setInterval(() => {
-if(galletas < 0){
-galletas = 0;
-}
-}, 100);
-
-function ShopT(){
-document.getElementById("uppert").style.display = "none"
-document.getElementById("uppert2").style.display = "block"
-document.getElementById("uppert3").style.display = "none"
-}
-function ShopF(){
-document.getElementById("uppert").style.display = "none"
-document.getElementById("uppert2").style.display = "none"
-document.getElementById("uppert3").style.display = "block"
-}
-function ShopTW(){
-document.getElementById("uppert").style.display = "none"
-document.getElementById("uppert2").style.display = "block"
-document.getElementById("uppert3").style.display = "none"
-}
-function ShopTH(){
-document.getElementById("uppert").style.display = "block"
-document.getElementById("uppert2").style.display = "none"
-document.getElementById("uppert3").style.display = "none"
-}
-function comprar(objeto){
- if(galletas >= precioProducto[objeto]){
- inventario[objeto]++;
- galletas -= precioProducto[objeto];
- precioProducto[objeto] += aumentoPrecio[objeto]
- }
-}
-
-function comprarf(objeto){
-saveCookie();
- if(galletas >= precioProducto[objeto]){
- FPSProduce = 3;
- inventario[objeto]++;
- galletas -= precioProducto[objeto];
- precioProducto[objeto] += aumentoPrecio[objeto]
- }
-}
-
-function producir(){
-for(contador=0; contador<inventario.length; contador++){
-galletas += inventario[contador] * galletasProduce[contador]
-}
-}
-function render(){
-document.title = "Tienes: " + galletas + " Galletitas"
-document.getElementById("okay").innerHTML = "Velocidad de Galletas: " + FPSProduce ;
-document.getElementById("contador").innerHTML = galletas;
-document.getElementById("inventario").innerHTML = `
-<p>INVENTARIO</p><br>
-<p>Cursores: ${inventario[0]}</p>
-<p>Abuelitas: ${inventario[1]}</p>
-<p>Hornos: ${inventario[2]}</p>
-<p>Robot:${inventario[3]}</p>
-<p>Fabrica:${inventario[4]}</p>
-<p>Trabajadores:${inventario[5]}</p>
-<p>Maquinas:${inventario[6]}</p>
-<p>Supermercados:${inventario[7]}</p>
-<p>Laboratorios:${inventario[8]}</p>
-`;
-}
-function Winch(val){
-winchest = val;
-}
-function consolel(){
-document.getElementById("consoler").style.display = "block"
-}
-var a1082481939199400198888801800400 = false;
-setInterval(() => {
-var cmd = document.getElementById("cmder").value;
-if(winch){
-var doit = alert("Enter Winch Value");
-Winch(doit);
-}
-if(cmd == "Cookies"){
-setTimeout(()=>{
-document.getElementById("cmder").value = ""
-}, 1000);
-a1082481939199400198888801800400 = true;
-setTimeout(()=>{
-a1082481939199400198888801800400 = false;
-}, 5000);
-}
-if(cmd == "winchest"){
-var winch = true;
-}
-}, 1);
-var winchest = 1
-//-------------------------
-var FPSProduce = 1;
-var winch = false;
-setInterval(()=>{
-if(a1082481939199400198888801800400){
-galletas += winchest;
-}
-}, 100);
-setInterval(function(){
-producir();
-},1000 - FPSProduce);
-var FPS = 30;
-
-setInterval(function(){
-render();
-},1000/FPS);
-
-var styleItem = document.createElement("style");
-styleItem.type = "text/css";
-styleItem.appendChild(document.createTextNode(`
-body {
-  background-color: #fefbd8;
-}
-.btn {
-  right: 50px;
-  background-color: #555;
-  color: white;
-  width: 100px;
-  height: 30px;
-  font-size: 20px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.meme {
-width: 160px;
-height: 160px;
-}
 .pro {
-text-align: center;
-font-size: 25px;
-font-family: 'hammersmith one';
+color: #32a852;
+  text-shadow: #555 2px 2px 3px;
 }
-.dild {
-background-image:url('img/dd.jpg');
-}
-.footerr {
-left: 0;
-bottom: 0; 
+.buttonL {
+  user-select: none;
+    color: #fff;
+    height: 35px;
+    width: 125px;
+    font-family: Verdana,sans-serif;
+    box-sizing: border-box;
+    float: center;
+    background-color: #649000;
+    padding: 8px 8px;
+    margin: 0;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    outline: 0;
+    transition: .3s;
+  }
+.buttonV {
+  user-select: none;
+    color: #fff;
+    height: 35px;
+    width: 125px;
+    font-family: Verdana,sans-serif;
+    box-sizing: border-box;
+    float: center;
+    background-color: #0f0f0f;
+    padding: 8px 8px;
+    margin: 0;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    outline: 0;
+    transition: .3s;
+  }
+.imge {
+width: 1025px;
+height: 85px;
+color: green;
 }
 .footer {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 200px;
-  height: 100%;
-  background-color: #2C2F33;
-  color: white;
-  text-align: center;
-}
-.left {
- text-align: left;
-}
-.upper {
-  position: fixed;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
   left: 0;
-  bottom: 0;
-  width: 200px;
+  width: 100%; /* Full width */
+}
+.sideFooter {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  left: 0;
+  width: 125px;
   height: 100%;
-  background-color: #2C2F33;
-  color: white;
+}
+</style>
+</head>
+<body>
+<center>
+<div id="Codigo">
+<br><br>
+<br><br>
+<input type="text" class="Code" id="Codec" placeholder="Pon tu codigo de tarjeta... "/><button class="chekit" onclick="chec();">Send</button>
+</div>
+<div id="DEEU" style="display : none">
+<div id="VideOsTiA">
+<!--Tonto si lees esto, porque queres ver el codigo idiota?-->  
+</div>
+</div>
+</center>
+</body>
+<style>
+body {
+  background-color: linen;
+}
+.chekit {
+  transition-duration: 0.1s;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 19px;
+  cursor: pointer;
   text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
 }
-`))
-document.head.appendChild(styleItem);
-var Cheats = false;
-var AutoPro = false;
-document.addEventListener('keydown', (e)=>{
-if (e.keyCode == 74 && Cheats) {
-    autoPro = true;
-    }
-if (e.keyCode == 72 && autoPro) {
-    consolel();
-    }
-	})
-function saveCookie(){
-document.cookie="cookiename=Foo Bar";
+
+.chekit:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
-function Cookies(){
-document.cookie
+.chekit:hover {background-color: #3e8e41}
+
+.Code {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  color: black;
+  background-color: #f8f8f8;
+  font-size: 30px;
+  resize: none;
+  padding: 12px 20px;
 }
+</style>
+<script>
+function chec(){var e=document.getElementById("Codec").value,t=document.getElementById("Codec");"918274a8289JA82Uj0a82HA1ICOnC4P4Pr0"!==e?(t.placeholder="Codigo Incorrecto...",document.getElementById("Codec").value="",setTimeout(()=>{t.placeholder="Pon tu codigo de tarjeta..."},5e3)):(document.getElementById("Codigo").style.display="none",document.getElementById("DEEU").style.display="block",document.getElementById("VideOsTiA").innerHTML='\n<br><br>\n<br><br>\n<br><br>\n </iframe><iframe width="700px"height="400px" src="https://www.youtube-nocookie.com/embed/4T0Z0Gdaigk" frameborder="0" allowfullscreen></iframe>\n \n')}  
 </script>
+</html>
